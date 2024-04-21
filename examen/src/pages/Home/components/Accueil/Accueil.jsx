@@ -6,11 +6,11 @@ const Accueil = ({ handleDecouvrir }) => {
   const { image, description } = accueil;
   return (
     <Fragment>
-      <ImageAccueil image={image} />
       <DescriptionAccueil
         description={description}
         handleDecouvrir={handleDecouvrir}
       />
+      <ImageAccueil image={image} />
     </Fragment>
   );
 };

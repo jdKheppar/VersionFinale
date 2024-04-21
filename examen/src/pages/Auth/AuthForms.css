@@ -4,13 +4,13 @@
 .auth-form {
   background-color: white;
   padding: 20px;
-  border: 2px solid black;
+  border: 2px solid var(--primary);
   width: 300px;
   margin: 20px auto;
 }
 
 .auth-form h2 {
-  color: black;
+  color: var(--primary);
   text-align: center;
 }
 
@@ -32,7 +32,7 @@
 .auth-form input[type="submit"] {
   width: 100%;
   padding: 10px;
-  background-color: black;
+  background-color: rgb(240, 163, 10);
   color: white;
   cursor: pointer;
   border: none;

@@ -33,7 +33,7 @@ const Produit = ({ data, saved, supprimerUnProduit }) => {
           <img src={image} alt={name} />
         </div>
         <div className={styles.description_produit}>
-          <h3>{name}</h3>
+          <h3 className={styles.productName}>{name}</h3>
           <p>{note}</p>
           <i
             className={`fa-solid fa-xl fa-bookmark ${

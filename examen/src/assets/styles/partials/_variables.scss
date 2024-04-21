@@ -1,9 +1,32 @@
+// :root {
+//   --primary: rgb(17, 17, 17);
+//   --gray-1: rgb(119, 119, 119);
+//   --gray-2: #efefef;
+//   --font-family: "Quicksand", sans-serif;
+//   --text-color: #282828;
+//   --favoris: rgb(194 157 101);
+//   --spinner-size: 35px;
+// }
+
 :root {
-  --primary: rgb(17, 17, 17);
-  --gray-1: rgb(119, 119, 119);
-  --gray-2: #efefef;
+  --primary: rgb(28, 28, 28);
+  /* No change, solid black */
+  --gray-1: rgb(130, 130, 130);
+  /* Medium gray for general text and less critical UI elements */
+  --gray-2: #ffffff;
+  /* Pure white for backgrounds to maximize contrast */
   --font-family: "Quicksand", sans-serif;
-  --text-color: #282828;
-  --favoris: rgb(194 157 101);
+  /* No change, maintain typographic consistency */
+  --text-color: #ffffff;
+  /* White text to contrast strongly against the primary black */
+  --favoris: rgb(240, 163, 10);
+  /* Vivid orange for highlights and calls to action */
   --spinner-size: 35px;
+  /* Functional property, no change needed */
+  --accent-red: #E63946;
+  /* A strong red for urgent or important elements */
+  --accent-blue: #2a9d8f;
+  /* Calming teal for links and informational elements */
+  --accent-gold: #f4a261;
+  /* Soft gold for luxury or premium status */
 }

@@ -3,9 +3,15 @@ import { NavLink } from "react-router-dom";
 
 const Logo = ({ logo }) => {
   return (
-    <div className="flex-fill">
+    <div>
       <NavLink to="/">
-        <img src={logo} alt="Atelier Materi - Haute parfumerie française" />
+        <img
+          className={"headerLogo"}
+          height={100}
+          width={200}
+          src={logo}
+          alt="Atelier Materi - Haute parfumerie française"
+        />
       </NavLink>
     </div>
   );

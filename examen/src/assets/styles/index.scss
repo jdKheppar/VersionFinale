@@ -7,8 +7,10 @@
 @use "./partials/spinner";
 
 body {
+  
   font-size: 15px;
   line-height: 1.6;
+  
 }
 
 .hover_opacity:hover {
@@ -18,7 +20,7 @@ body {
 }
 
 .text_accueil {
-  float: right;
+  float: left;
   color: var(--text-color);
   max-width: 50%;
 
@@ -38,13 +40,14 @@ body {
 }
 
 .image_accueil {
-  float: left;
+  float: right;
   width: 50%;
   max-width: 500px;
 }
 
 .decouvrir {
-  background-color: black;
+  
+  background-color: rgb(240, 163, 10);
   color: white;
   text-align: center;
   padding: 12px 25px;
@@ -56,10 +59,11 @@ body {
   text-decoration: none;
   margin-top: 20px;
   display: inline-block;
+  
 }
 
 .ajouter_produits {
-  background-color: black;
+  background-color: rgb(240, 163, 10);
   color: white;
   text-align: center;
   padding: 7px 10px;

@@ -57,7 +57,7 @@ export const produits = [
 
 export const accueil = {
   image: {
-    url: "assets/images/perfume.jpg",
+    url: "assets/images/lap1.jpg",
     alt: "Nos produits",
   },
   description: {

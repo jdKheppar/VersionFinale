@@ -6,7 +6,7 @@ const Footer = () => {
     <div
       className={`${styles.footer} d-flex flex-row justify-content-center align-items-center p-20`}
     >
-      Copyright © 2024 <span className="ml-10">2h du matin brain</span>
+      Copyright © 2024 <span className="ml-10">Twilight quiet thoughts</span>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import logo from "../../assets/images/AM-logo.svg";
+import logo from "../../assets/images/tech.png";
 import "./Header.css";
 import { users } from "../../sampleData/data";
 import ProduitFavorisContext from "../../contexts/produitFavorisContext";
@@ -41,18 +41,19 @@ const Header = ({ setProduitsFavoris }) => {
     setProduitsFavoris([]);
   };
   return (
-    <div className={`header d-flex flex-row align-items-center`}>
-      <Logo logo={logo} />
-      <User user={user} handleDeconnexion={handleOnClickDeconnexion} />
+    <div className={`header`}>
+      {/* <User user={user} handleDeconnexion={handleOnClickDeconnexion} /> */}
+
       <ul>
-        <li>
-          <NavLink
-            className="hover_opacity ajouter_produits mr-10"
-            to="/admin/add"
-          >
-            <i className="fa-solid fa-plus mr-5"></i> Produits
-          </NavLink>
-        </li>
+        {/* <li className="mr-15">
+          <i
+            onClick={() => {
+              setShowMenu(false);
+              setShowConnexion(true);
+            }}
+            className="fa-solid fa-user fa-xl connexion hover_opacity"
+          ></i>
+        </li> */}
         <li>
           <span className={"produitsFavoris"}>
             {produitsFavorisContext.data.length}
@@ -65,17 +66,11 @@ const Header = ({ setProduitsFavoris }) => {
             className="fa-solid fa-bag-shopping fa-xl panier hover_opacity"
           ></i>
         </li>
-        <li className="mr-15">
-          <i
-            onClick={() => {
-              setShowMenu(false);
-              setShowConnexion(true);
-            }}
-            className="fa-solid fa-user fa-xl connexion hover_opacity"
-          ></i>
-        </li>
       </ul>
-
+      <NavLink className="hover_opacity ajouter_produits mr-10" to="/admin/add">
+        <i className="fa-solid fa-plus mr-5"></i> Ajouter Des Produits
+      </NavLink>
+      <Logo logo={logo} />
       {showMenu && (
         <>
           <div onClick={() => setShowMenu(false)} className="calc"></div>
